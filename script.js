@@ -1,4 +1,4 @@
-const passwordBox = document.getElementById("passowrd");
+const passwordBox = document.getElementById("password");
 const length = 12;
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -7,6 +7,7 @@ const numbers = "0123456789";
 const symbols = "@#$%^&*()_+~|}{[]></-=! ";
 
 const allChars = upperCase + lowerCase + numbers + symbols
+
 function generate(){
     let password = "";
     password += upperCase[Math.floor(Math.random() * upperCase.length)];
@@ -19,3 +20,8 @@ function generate(){
     }
     passwordBox.value = password;
 }
+
+function copyPassword() {
+    passwordBox.select();
+    navigator.clipboard.writeText(passwordBox.value);
+  }
