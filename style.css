@@ -16,47 +16,6 @@ body{
     max-width: 700px;
 }
 
-.container h1{
-    font-weight: 500;
-    font-size: 45px;
-}
-
-.container h1 span{
-    color: #019f55;
-    border-bottom: 4px solid #019f55;
-    padding-bottom: 7px;
-}
-
-.options{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 26px 20px;
-    border-radius: 5px;
-}
-
-.options label{
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.options input[type="number"]{
-    border: 0;
-    outline: 0;
-    font-size: 18px;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-.options input[type="checkbox"]{
-    margin-right: 10px;
-}
-
 .display{
     width: 100%;
     margin-top: 50px;
@@ -69,7 +28,15 @@ body{
     padding: 26px 20px;
     border-radius: 5px;
 }
-
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.container h1 span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;;
+}
 .display img{
     width: 30px;
     cursor: pointer;
@@ -79,14 +46,11 @@ body{
     border: 0;
     outline: 0;
     font-size: 24px;
-    width: 100%;
 }
-
 .container button img{
     width: 28px;
     margin-right: 10px;
 }
-
 .container button{
     border: 0;
     outline: 0;
@@ -100,4 +64,23 @@ body{
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.options{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+
+.options input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
 }
