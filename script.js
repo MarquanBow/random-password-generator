@@ -9,7 +9,7 @@ function generate(event) {
     event.preventDefault();
 
     const form = document.getElementById("passwordForm");
-    const length = parseInt(form.length.value) || 12;
+    const length = parseInt(form.length.value);
     const includeNumbers = form.includeNumbers.checked;
     const includeSymbols = form.includeSymbols.checked;
 
